@@ -1,0 +1,22 @@
+{
+  "name": "nodejs_inclassassign",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kinsleywhite9/nodejs_inclassassign.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kinsleywhite9/nodejs_inclassassign/issues"
+  },
+  "homepage": "https://github.com/kinsleywhite9/nodejs_inclassassign#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
