@@ -11,18 +11,31 @@
         </h1>
         <form action="/addToDo" method="POST">
             <input type="text" name="newtodo" placeholder="add new item">
-            <button>
+
+            <button type="submit">
                 Add To-Do
             </button>
             <h2>
-                Added To-Do
+                Current Task
             </h2>
+            <%  for( var i=0; i<tasks.length; i++){ %>
+                <li><input type="checkbox" name="check" value="<% = tasks[i] %>" /><%= tasks[i] %></li>
+            <% } %>
+            
             <button formaction="/removeToDo" type="submit">
                 remove
             </button>
         </form>
-        <h2>
-            Completed
-        </h2>
+        <form action="" method="POST"></form>
+            <h2>
+                Completed Task 
+            </h2>
+            <%  for(var i=0; i<completed.length; i++){ %>
+                <li><input type="checkbox" name="delete" value="<% = completed[i] %>" /><%= completed[i] %></li>
+            <% } %>
+            <button formaction="/deleteToDo" type="submit">
+                remove
+            </button>
+            </form>
     </body>
 </html>
